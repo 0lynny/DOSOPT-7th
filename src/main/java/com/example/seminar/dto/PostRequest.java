@@ -11,7 +11,8 @@ public record PostRequest(
         String content
 ) {
 
-    @AssertTrue(message = "제목은 10자 이상으로 작성해주세요.")
+    //true일때는 코드가 정상적으로 돌아가고, false일때는 예외를 던짐 -> 메소드명은 is로 시작해야함!
+    @AssertTrue(message = "내용은 10자 이상으로 작성해주세요.")
     public boolean isValidContent() {
         try {
             return this.content.length() >= 10;
