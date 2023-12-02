@@ -170,4 +170,7 @@ application.yml
 ### Test ###
 data.sql
 
+### MACOS ###
+.DS_Store
+
 # End of https://www.gitignore.io/api/java,macos,gradle,intellij
